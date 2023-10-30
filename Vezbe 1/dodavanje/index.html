@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodavanje</title>
+</head>
+<body>
+    <div class="naziv-linka">Naziv linka: <input type="text" id="naziv"></div>
+    <br>
+    <div class="adresa">Adresa: <input type="text" id="link"></div>
+    <br>
+    <input type="submit" value="Ubaci link" id="ubaci" onclick="ubaciLink()">
+    <a class="ispis-linka"></a>
+
+    <script>
+        let naziv = document.querySelector("#naziv");
+        let link = document.querySelector("#link");
+        let ubaci = document.querySelector("#ubaci");
+        let ispis_linka = document.querySelector(".ispis-linka");
+        function ubaciLink(){
+            ispis_linka.innerHTML = naziv.value;
+            ispis_linka.setAttribute('href',`${link.value}`);
+        }
+      
+
+    </script>
+</body>
+</html>

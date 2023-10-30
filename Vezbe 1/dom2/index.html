@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+</head>
+<body>
+    <div class="unesi-tekst">Unesi tekst:</div>
+    <br>
+    <input type="text" id="prvi">
+    <input type="text" id="drugi">
+    <br>
+    <input type="button" value="Odredi veci" onclick="odrediVeci()">
+</body>
+<script>
+    // let lengthForString = 0;
+    // function odrediDuzinu(s){
+    
+    //     if(s[lengthForString] !== undefined){
+    //         lengthForString++;
+    //     }
+    //     else{
+    //         return lengthForString;
+    //     }
+    // }
+    function odrediVeci(){
+        let prvi = document.querySelector("#prvi");
+        let drugi = document.querySelector("#drugi");
+        // console.log(prvi.value.length);
+        if(prvi.value.length > drugi.value.length){
+            prvi.style.background = "red";
+        }
+        else if(prvi.value.length < drugi.value.length){
+            drugi.style.background = "red";
+        }
+        else{
+            drugi.style.background = "white";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="max-number.css">
+    <title>Max Number App</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="numberInput" placeholder="Enter numbers (comma separated)">
+        <button onclick="findMax()">Max</button>
+    </div>
+
+    <script>
+        
+        function findMax() {
+    const numberInput = document.getElementById('numberInput').value;
+    const numbers = numberInput.split(',').map(Number);
+
+    if (numbers.length === 0) {
+        alert('Please enter some numbers.');
+        return;
+    }
+
+    const maxNumber = Math.max(...numbers);
+
+    alert(`The maximum number is: ${maxNumber}`);
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zbir</title>
+</head>
+<body>
+    <input type="text" id="prvi-broj">
+    <input type="text" id="drugi-broj">
+    <input type="button" onclick="izracunajZbir()" value="Izracunaj">
+    <p class="zbir-ispis"></p>
+
+    <script>
+      function izracunajZbir(){
+        let prvi_broj = document.querySelector('#prvi-broj');
+        let drugi_broj = document.querySelector('#drugi-broj');
+        let zbir_ispis = document.querySelector('.zbir-ispis');
+        console.log(prvi_broj);
+        console.log(drugi_broj);
+        console.log(zbir_ispis);
+        prvi_broj = parseInt(prvi_broj.value);
+        drugi_broj = parseInt(drugi_broj.value);
+        let zbir = prvi_broj + drugi_broj;
+        zbir_ispis.innerHTML = `Zbir dva broja je: ${zbir}`;
+
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="filter">
+           <h1 class="naslov">Kalkulator inflacije</h1>
+           <div class="inflacija-box">
+            <div class="stopa-inflacije">
+                Stopa inflacije
+                <input type="number" name="" id="inflacija" min="1" max="99">
+                %
+            </div>
+            <div class="racunanje-inflacije">
+                Izracunaj koliko ce <input type="text" id="novac">
+                € da vrijedni za <input type="text" id="godine"> godina?
+            </div>
+            <div class="izracunaj">
+                <button onclick="izracunajInflaciju()">Izaracunaj</button>
+            </div>
+            <p class="rezultat"></p>
+           </div> 
+    </div>
+
+    <script type="text/javaScript" src="script.js">
+      
+    </script>
+</body>
+
+</html>
