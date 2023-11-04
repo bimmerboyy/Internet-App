@@ -70,6 +70,43 @@
 
 //Petlje
 
+// $broj = 1;
 
+// while($broj <= 5){
+//     echo "Broj: $broj <br>";
+//     $broj++; 
+// }
+
+// for($broj = 1;$broj <= 5;$broj++){
+//     echo "Broj: $broj <br>";
+// }
+
+// $brojevi = [1,10,4,7,15,100,45,29,49,22];
+
+//Umesto ovoga pisemo foreach
+// echo $brojevi[0] . "<br>";
+// echo $brojevi[1] . "<br>";
+// echo $brojevi[2] . "<br>";
+// echo $brojevi[3] . "<br>";
+// echo $brojevi[4] . "<br>";
+
+// foreach($brojevi as $broj){
+//     echo "$broj <br>";
+// }
+
+//Za asocijativne nizove
+
+// $drzave = [
+//     "Hrvatska" => ["Zagreb","Split","Rijeka"],
+//     "Srbija" => ["Beograd","Novi Sad","Nis"],
+//     "Crna Gora" => ["Podgorica","Niksic","Budva"]
+// ];
+
+// foreach($drzave as $drzava => $gradovi){
+//     echo "<b>$drzava</b> <br>";
+//     foreach($gradovi as $grad){
+//         echo "$grad <br>";
+//     }
+// }
 
 ?>
