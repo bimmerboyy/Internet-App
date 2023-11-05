@@ -43,7 +43,7 @@
     $countries["Idaho"][3] = "Apache";
     $countries["Idaho"][4] = "Cochise";
     $countries["Idaho"][5] = "Coconino";
-    print( "\$countries['Idaho'][0] = {$countries['Idaho'][0]}.")
+    print( "\$countries['Idaho'][0] = {$countries['Idaho'][0]}")
 
 
     ?>
