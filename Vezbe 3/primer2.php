@@ -35,7 +35,7 @@
     $m[0][1] = "Zero one";
     print("The value of \$m[0][1] is {$m[0][1]} <br><br>");
 
-    //Multidimenzionalni asocijativni niz
+    //Multidimenzionalni asocijativni niz 
 
     $countries["Idaho"][0] = "Ada";
     $countries["Idaho"][1] = "Adams";
