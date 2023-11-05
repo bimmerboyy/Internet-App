@@ -9,29 +9,29 @@
      //Ukoliko je brend koji smo slektovali onda ce da ispise selected u option preko echo i 
             //samim tim ce biti prikazan selektovani element u drop baru
     $selectedBrand = '';
-    if(isset($_GET['brand'])){
-        $selectedBrand = $_GET['brand'];
+    if(isset($_POST['brand'])){
+        $selectedBrand = $_POST['brand'];
     }
     
-    $selectedBrand = $_GET['brand'];
+    $selectedBrand = $_POST['brand'];
     
     // echo $selectedBrand;
     ?>
-    <form method="GET">
+    <form method="POST">
         <!--Dva znaka pitanja nam dodje kao isset tj proverava da li je seetovan brand
         ako nije setovano stavice da je prazno ako jeste setovano uzet cemo tu vrijendost i uporedjujemo 
         produzeni kod
-        if(isset($_GET['brand'])){
-            if($_GET['brand'] === 'BMW'){
+        if(isset($_POST['brand'])){
+            if($_POST['brand'] === 'BMW'){
                 echo "selected";
             }
         }
         -->
         <select name="brand">
-            <option value="ALL" <?php echo($_GET['brand'] ?? '') === 'ALL' ? 'selected' : ''; ?>>SVE</option> 
-            <option value="BMW" <?php echo($_GET['brand'] ?? '') === 'BMW' ? 'selected' : ''; ?>>BMW</option>
-            <option value="Audi" <?php echo($_GET['brand'] ?? '') === 'Audi' ? 'selected' : ''; ?>>Audi</option>
-            <option value="Mercedes" <?php echo($_GET['brand'] ?? '') === 'Mercedes' ? 'selected' : ''; ?>>Mercedes</option>
+            <option value="ALL" <?php echo($_POST['brand'] ?? '') === 'ALL' ? 'selected' : ''; ?>>SVE</option> 
+            <option value="BMW" <?php echo($_POST['brand'] ?? '') === 'BMW' ? 'selected' : ''; ?>>BMW</option>
+            <option value="Audi" <?php echo($_POST['brand'] ?? '') === 'Audi' ? 'selected' : ''; ?>>Audi</option>
+            <option value="Mercedes" <?php echo($_POST['brand'] ?? '') === 'Mercedes' ? 'selected' : ''; ?>>Mercedes</option>
         </select>
 
         <button type="submit">Pretrazi</button>
@@ -40,7 +40,7 @@
 <?php
 //POST I GET METODE
 
-// var_dump($_GET['brand']);
+// var_dump($_POST['brand']);
 
 
 $cars =[
