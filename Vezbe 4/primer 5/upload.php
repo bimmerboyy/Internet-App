@@ -23,8 +23,8 @@ if(in_array($fileActualExt,$allowed)){
         //Postavljamo ogranicenje za velicinu fajla konkretno ne smemo uneti fajl koji ima vise od 500mb
         if($fileSize < 500000){
             $fileNameNew = uniqid('',true) . "," . $fileActualExt;
-            $fileDestionation = 'C:/xampp/htdocs/uploads/';
-            // . $fileNameNew;
+            $fileDestionation = 'C:/xampp/htdocs/uploads/'. $fileNameNew;
+           
             move_uploaded_file($fileTmpName,$fileDestionation);
 
             header("Loaction: index.php?uploadsuccess");
