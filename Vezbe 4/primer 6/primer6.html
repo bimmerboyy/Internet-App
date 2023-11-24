@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer 6</title>
+</head>
+<body>
+    <form action="primer6.php" method="post">
+    <p>Enter some text</p>
+    <textarea name="text" id="" cols="30" rows="7"></textarea>
+    <br>
+    <br>
+    <label for="function">Choose filtering method:</label>
+    <select name="filterType" id="">
+        <option value="0">none</option>
+        <option value="1">strip_tags()</option>
+        <option value="2">htmlentities()</option>
+    </select>
+    <br>
+    <br>
+    <input type="checkbox" name="strip_slashes">
+    <label for="strip_slashes">Strip slashes</label>
+    <br>
+    <input type="checkbox" name="nl2br">
+    <label for="nl2br">nl2br</label>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

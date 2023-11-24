@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer 3</title>
+    <style>
+        td{
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="primer3.php" method="POST">
+        <table>
+            <tr>
+                <td>Select country:</td>
+                <td>
+                    <select name="country" id="">
+                    <option value="serbia">Serbia</option>
+                    <option value="montenegro">Montenegro</option>
+                    <option value="bosna">Bosna</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Choose topics:</td>
+                <td>
+                    <label for="database">Database:</label>
+                    <input type="checkbox" name="database">
+                    <br>
+                    <label for="web_design">Web design:</label>
+                    <input type="checkbox" name="web_design">
+                    <br>
+                    <label for="web_programming">Web programming:</label>
+                    <input type="checkbox" name="web_programming">
+                </td>
+            </tr>
+            <tr>
+                <td>Select year:</td>
+                <td> <label for="first">First:</label>
+                    <input type="radio" name="first">
+                    <br>
+                    <label for="second">Second</label>
+                    <input type="radio" name="second">
+                    <br>
+                    <label for="third">Third</label>
+                    <input type="radio" name="third"></td>
+            </tr>
+            <tr>
+                <td>Please select all the colours you like:</td>
+                <td>
+                    <select name="colors" id="" size="5">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Enter your address:</td>
+                <td>
+                    <input type="text" name="address">
+                </td>
+            </tr>
+        </table>
+        <button type="submit" style="margin-left:400px; margin-top:30px;">Submit</button>
+    </form>
+</body>
+</html>
