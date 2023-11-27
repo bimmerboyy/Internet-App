@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma 2</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <label for="address">Address:</label>
+        <input type="text" name="address">
+        <br><br>
+        <label for="city">City:</label>
+        <input type="text" name="city">
+        <label for="state">State:</label>
+        <input type="text" name="state" style="width:30px;">
+        <label for="zipcode">Zipcode:</label>
+        <input type="text" name="zipcode" style="width:50px;">
+        <label for="customer_code">Customer Code:</label>
+        <input type="text" name="customer_code" style="width:70px;">
+        <hr style="margin-top:20px;">
+        <label for="wood"><b>Type of wood:</b></label>
+        <select name="wood" id="">
+            <option value="Mahafgony">Mahagony</option>
+            <option value="Bukva">Bukva</option>
+            <option value="Hrast">Hrast</option>
+        </select>
+        <label for="size"><b>Size:</b></label>
+        <input type="radio" name="size" value="king" id="king">
+        <label for="king">King</label>
+        <input type="radio" name="size" value="queen" id="queen">
+        <label for="queen">Queen</label>
+        <input type="radio" name="size" value="twin" id="twin">
+        <label for="twin">Twin</label>
+        <input type="radio" name="size" value="single" id="single">
+        <label for="single">Single</label>
+        <br><br>
+        <label for="extras"><b>Extras:</b></label>
+        <input type="checkbox" name="extras[]" value="footboard">
+        <label for="footboard">Footboard</label>
+        <input type="checkbox" name="extras[]" value="drawers">
+        <label for="drawers">Drawers (for underneath)</label>
+        <input type="checkbox" name="extras[]" value="casters">
+        <label for="casters">Casters</label>
+        <input type="checkbox" name="extras[]" value="squeak-proofing">
+        <label for="squeak-proofing">Squeak-proofing</label>
+        <br><br>
+        <hr>
+        <label for="comment">Please share any suggestions or comments with us:</label>
+        <br><br>
+        <textarea id="" name="comment" rows="2" cols="40" style="overflow-y: scroll; height: 50px; resize: none;">
+       Comments?
+        </textarea>
+        <hr>
+        <div class="buttons" style="display:flex;">
+            <button type="submit" style="margin-right:10px;">Order Bed</button>
+            <button type="submit">Start Over</button>
+        </div>
+       
+        
+    </form>
+</body>
+</html>
