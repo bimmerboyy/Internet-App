@@ -3,9 +3,11 @@
 $submit = $_POST['submit'];
 $indeks = $_POST['indeks'];
 $imePrezime = $_POST['imePrezime'];
+$brisanjeStudenta =  $_POST['brisanjeStudenta'];
 
 if(isset($submit)){
     upisBaze($indeks,$imePrezime);
+    izbrisiStudenta($indeks);
     prikazBaze();
 }
 else{
@@ -13,7 +15,7 @@ else{
 }
 
 function prikazBaze(){
-    $servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "labzad2";
@@ -71,5 +73,30 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 }
 
+
+function izbrisiStudenta($indeks){
+  $servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "labzad2";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// sql to delete a record
+$sql = "DELETE FROM studenti WHERE indeks='$indeks'";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Record deleted successfully";
+} else {
+  echo "Error deleting record: " . $conn->error;
+}
+
+$conn->close();
+}
 
 ?>
